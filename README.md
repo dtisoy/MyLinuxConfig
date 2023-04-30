@@ -7,7 +7,7 @@ I had used Xubuntu and Linux lite
 ![https://imgur.com/yQHas3b.png](https://imgur.com/yQHas3b.png)
 The apps I use for this are:
 - dock: plank
-- Ulauncher: app launcher, in xubuntu I had the "\<control> + \<space>" shortcut in linux lite is "\<control> + \<super>" (windows logo)
+- Ulauncher: app launcher, in xubuntu I had the "\<Ctrl> + \<space>" shortcut in linux lite is "\<Ctrl> + \<super>" (windows logo)
 
 ### Windows manager shortcuts:
 - alt+Backspace: Delete window
@@ -30,5 +30,9 @@ In the terminalConfiguration there are two files:
 ### Vim Configuration
 In the forder vimConfig you should find the README.md with the editor settings
 
-### Git ssh configuration
-soon...
+### Set up SSH in github 
+
+- Generate a new private SSH key and add it to the SSH agent
+[githubDocs: Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+- Add the public SSH KEY to your account on GitHub
+[gihubDocs: Adding a new SSHkwy to GitHub Account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
