@@ -25,10 +25,13 @@ Bonus: windows Manager Tweaks -> accessibility -> "hide title (and frame) of win
 
 ## Terminal Configuration
 In the terminalConfiguration folder there are two files:
-- The .bashrc file is my bash visual configuration where I source my custom functions and I modify the ps1 variable and it's based in the xubuntu .bashrc generated script but it works in Linux lite
-*make sure to make a backup for your current .bashrc file*
+- **.bashrc*** file is my bash visual configuration where I source my custom functions and I modify the ps1 variable and it's based in the xubuntu .bashrc generated script but it works in Linux lite
 
-- .bash_aliases: my most used bash aliases
+*(you can just copy the ps1 variable and the tail of the .bashrc file instead of replacing the whole file)*
+  
+*(make sure to make a backup for your current .bashrc file)*
+
+- **.bash_aliases:** my most used bash aliases
 
 **current bash aliases**
 
