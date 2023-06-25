@@ -35,3 +35,9 @@ inoremap <c-z> <c-o>:u<CR>
 " Exit insert mode after creating a new line above or below the current line.
 nnoremap o o<esc>
 nnoremap O O<esc>
+
+" NERDtree settings
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
