@@ -2,9 +2,12 @@
 
 ### Add the colorscheme 
 ` 
-$ cd ~/.vim/colors
-$ curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
- ` 
+$ cd ~/.vim/colors 
+`
+
+`
+ $ curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+` 
 ### Add the plugin manager
 `
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
