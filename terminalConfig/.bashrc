@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# source /home/ltisoy/.my_commands.sh
-if [ -f ~/.my_commands ]; then
-    . ~/.my_commands
+# source custom terminal commands 
+if [ -f ~/.bash_custom_commands]; then
+    . ~/.bash_custom_commands
 fi
