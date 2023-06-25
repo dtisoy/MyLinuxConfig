@@ -19,7 +19,8 @@ alias gcm='git commit -m'
 alias gc='git commit'
 alias gs='git status' 
 alias gm='git merge'
-alias wt='git worktree'
+alias gwt='git worktree'
+alias gplo='git pull origin'
 
 #python
 alias pserver='python3 -m http.server'
