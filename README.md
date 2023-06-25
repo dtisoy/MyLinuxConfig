@@ -1,15 +1,16 @@
 # Main settings for systems with xfce
 
-### Install SO with xfce
 I had used Xubuntu and Linux lite
 
-### Visual Configuration
+## Visual Configuration
 ![https://imgur.com/yQHas3b.png](https://imgur.com/yQHas3b.png)
 The apps I use for this are:
 - dock: plank
 - Ulauncher: app launcher, in xubuntu I had the "\<Ctrl> + \<space>" shortcut in linux lite is "\<Ctrl> + \<super>" (windows logo)
 
-### Windows manager shortcuts:
+## Windows manager shortcuts:
+*several of them had to be configured manually*
+
 - alt+Backspace: Delete window
 - Super+Up: Maximize window
 - Shift+Alt+Page Down: lower window
@@ -22,15 +23,31 @@ The apps I use for this are:
 
 Bonus: windows Manager Tweaks -> accessibility -> "hide title (and frame) of windows when maximazed" both are selected
 
-### Terminal Configuration
-In the terminalConfiguration there are two files:
+## Terminal Configuration
+In the terminalConfiguration folder there are two files:
 - The .bashrc file is my bash visual configuration where I source my custom functions and I modify the ps1 variable and it's based in the xubuntu .bashrc generated script but it works in Linux lite
-- The .bashrc.old is the default .bashrc script in linux lite, so is just a backup
+*make sure to make a backup for your current .bashrc file*
 
-### Vim Configuration
-In the forder vimConfig you should find the README.md with the editor settings
+- .bash_aliases: my most used bash aliases
 
-### Set up SSH in github 
+**current bash aliases**
+
+|alias|description  |
+|--|--|
+|ggl|git print nice log graph
+|gpo|git push origin|
+|gcm| git commit -m|
+|gc| git commit|
+|gs|git status|
+|gm|git merge|
+|gwt|git worktree|
+|pserver|python server|
+|pfr|python: add a requirements.txt|
+
+## Vim Configuration
+In the folder vimConfig you should find the README.md with the editor settings
+
+## Set up SSH in github 
 
 - Generate a new private SSH key and add it to the SSH agent
 [githubDocs: Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
