@@ -25,7 +25,7 @@ Bonus: windows Manager Tweaks -> accessibility -> "hide title (and frame) of win
 
 ## Terminal Configuration
 In the terminalConfiguration folder there are two files:
-- **.bashrc*** file is my bash visual configuration where I source my custom functions and I modify the ps1 variable and it's based in the xubuntu .bashrc generated script but it works in Linux lite
+- **.bashrc** file is my bash visual configuration where I source my custom functions and I modify the ps1 variable and it's based in the xubuntu .bashrc generated script but it works in Linux lite
 
 *(you can just copy the ps1 variable and the tail of the .bashrc file instead of replacing the whole file)*
   
