@@ -14,7 +14,7 @@
 
 # git
 alias ggl='git log --graph --oneline --decorate'
-alias gpo='git push origin'
+alias gpo='git push -u origin'
 alias gcm='git commit -m'
 alias gc='git commit'
 alias gs='git status' 
