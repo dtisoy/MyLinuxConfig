@@ -14,6 +14,7 @@ chmod +x setup.sh
 ./setup.sh
 ```
 Once installation finished, enter the command: `. ~/.profile`
+
 after that, enter vim and install the plugins with `:PlugInstall`
 
 ## Terminal Configuration
