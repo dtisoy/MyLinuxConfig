@@ -20,8 +20,8 @@ echo "Installing terminal theme"
 mkdir ~/.local/bin && curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
 echo 'eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/neko.omp.json')"' >> ~/.profile
 
-. ~/.profile
 
 
 echo "setup finished succesfully :)"
-echo "restart the terminal"
+echo "run the next command: "
+echo ". ~/.profile"
