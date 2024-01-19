@@ -1,6 +1,8 @@
 # Main settings for systems with xfce
 
-I had used Xubuntu and Linux lite
+## Usage
+- make sure you have installed git curl and vim
+
 
 ## Visual Configuration
 ![https://imgur.com/yQHas3b.png](https://imgur.com/yQHas3b.png)
@@ -24,13 +26,7 @@ The apps I use for this are:
 Bonus: windows Manager Tweaks -> accessibility -> "hide title (and frame) of windows when maximazed" both are selected
 
 ## Terminal Configuration
-In the terminalConfiguration folder there are two files:
-- **.bashrc** file is my bash visual configuration where I source my custom functions and I modify the ps1 variable and it's based in the xubuntu .bashrc generated script but it works in Linux lite
-
-*(you can just copy the ps1 variable and the tail of the .bashrc file instead of replacing the whole file)*
-  
-*(make sure to make a backup for your current .bashrc file)*
-
+- **Bash Theme:** Oh-my-posh robbyrussell theme
 - **.bash_aliases:** my most used bash aliases
 
 **current bash aliases**
@@ -46,9 +42,6 @@ In the terminalConfiguration folder there are two files:
 |gwt|git worktree|
 |pserver|python server|
 |pfr|python: add a requirements.txt|
-
-## Vim Configuration
-In the folder vimConfig you should find the README.md with the editor settings
 
 ## Set up SSH in github 
 
