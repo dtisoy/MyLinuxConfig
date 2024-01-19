@@ -12,7 +12,7 @@ curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colo
 # create symbolic links
 cd ~
 ln -s ~/MyLinuxConfig/myVim/.vimrc ~/.vimrc
-ln -s ~/MyLinuxConfig/myVim/.vim/config_files config_files
+ln -s ~/MyLinuxConfig/myVim/.vim/config_files ~/.vim/config_files
 
 echo "setup finished succesfully :)"
 echo "enter vim and execute :PlugInstall"
