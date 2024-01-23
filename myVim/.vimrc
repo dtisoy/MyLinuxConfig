@@ -50,4 +50,4 @@ so ~/.vim/config_files/plugin_config.vim
 
 
 set background=dark
-colorscheme ron 
+colorscheme gruvbox 
