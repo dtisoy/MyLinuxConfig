@@ -1,26 +1,38 @@
 #!/bin/bash
-# Vim Setup
+# Vim and Terminal Theme setup
 
-# add .vim and its folders
-echo "Setting Vim"
+# Set up Vim
+echo "Setting up Vim"
 mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
-# install plug
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-# add color scheme from github
-cd ~/.vim/colors
-curl -o molokai.vim https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
-# create symbolic links
-cd ~
-ln -s ~/MyLinuxConfig/myVim/.vimrc ~/.vimrc
-ln -s ~/MyLinuxConfig/myVim/.vim/config_files ~/.vim/config_files
+
+# Install vim-plug
+if [ ! -f ~/.vim/autoload/plug.vim ]; then
+    echo "Installing Vim-Plug"
+    curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+fi
+
+# Create symbolic links to my vim configuration repo
+ln -sf ~/MyLinuxConfig/myVim/.vimrc ~/.vimrc
+ln -sf ~/MyLinuxConfig/myVim/.vim/config_files ~/.vim/config_files
 
 # Terminal Theme
 echo "Installing terminal theme"
-mkdir ~/.local/bin && curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
-echo 'eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/neko.omp.json')"' >> ~/.profile
 
+# Prompt user for the theme
+read -p "Enter the Oh-My-Posh theme you want to install: " selected_theme
 
+# Default theme if user input is empty
+selected_theme=${selected_theme:-neko}
+
+INSTALLATION_DIR=~/.local/bin
+if [ ! -d "$INSTALLATION_DIR" ]; then
+    mkdir -p "$INSTALLATION_DIR"
+    curl -s https://ohmyposh.dev/install.sh | bash -s -- -d "$INSTALLATION_DIR"
+fi
+
+# Update theme configuration with user theme
+echo 'eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/"$selected_theme".omp.json')"' >> ~/.profile
 
 echo "setup finished succesfully :)"
 echo "run the next command: "
