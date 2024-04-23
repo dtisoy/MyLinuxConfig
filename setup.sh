@@ -32,8 +32,13 @@ if [ ! -d "$INSTALLATION_DIR" ]; then
 fi
 
 # Update theme configuration with user theme
-echo 'eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/"$selected_theme".omp.json')"' >> ~/.profile
+echo 'eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/"$selected_theme".omp.json')"' >> ~/.bashrc
+
+if [ -f /usr/share/powerline/bindings/bash/powerline.sh ]; then
+    echo "POWERLINE PLUGIN DETECTED, you should disable the plugin in your .bashrc"
+fi
+
 
 echo "setup finished succesfully :)"
 echo "run the next command: "
-echo ". ~/.profile"
+echo "exec bash"
