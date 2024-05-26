@@ -1,3 +1,7 @@
+" cursor shape
+let &t_SI = "\e[3 q"
+let &t_EI = "\e[2 q"
+
 set nocompatible
 
 set nobackup
@@ -9,6 +13,7 @@ filetype plugin on
 filetype indent on
 syntax on
 
+set encoding=UTF-8
 set number
 set relativenumber
 set shiftwidth=4
@@ -50,4 +55,7 @@ so ~/.vim/config_files/plugin_config.vim
 
 
 set background=dark
-colorscheme gruvbox 
+colorscheme gruvbox
+
+" devicons: reasonable defaults from webinstall.dev/vim-devicons
+source ~/.vim/plugins/devicons.vim
